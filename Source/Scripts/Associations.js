@@ -1,9 +1,9 @@
 
 import { parse , stringify } from 'YAML'
-import * as Paths from './Paths.js'
 import { join } from 'Path'
 
-
+import { pack } from './Activate.js'
+import * as Paths from './Paths.js'
 
 const { readTextFile , writeTextFile } = Deno;
 const { log } = console;
@@ -16,13 +16,13 @@ export async function ensureDefaults(){
     
     const defaults = await readDefaults();
     
-    await pack.configs.ensure(path,defaults);
+    await pack().configs.ensure(path,defaults);
 }
 
 async function readDefaults(){
     
     const { default_associations : relative } = Paths;
-    const { folder } = pack.paths;
+    const { folder } = pack().paths;
     
     const path = join(folder,relative);
     
@@ -56,7 +56,7 @@ async function saveConfig (associations) {
 function configPath () {
     
     const { associations : relative } = Paths;
-    const { configs : folder } = pack.paths;
+    const { configs : folder } = pack().paths;
     
     return join(folder,relative);
 }
@@ -74,8 +74,6 @@ export async function updateDefaults(){
     
     
     const used = [ ... Object.values(config) ].flat();
-    
-    log(used)
     
     for(const [ svg , extensions ] of entries(defaults)){
         

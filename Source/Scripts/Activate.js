@@ -4,11 +4,18 @@ import { ensureDefaults , updateDefaults } from './Associations.js'
 const { log } = console;
 
 
+let self;
+
+
+export function pack(){
+    return self;
+}
+
 export async function activate(pack){
 
     log(`Starting 'File Icons' package`);
 
-    window.pack = pack;
+    self = pack;
     
     await ensureDefaults();
     await updateDefaults();
