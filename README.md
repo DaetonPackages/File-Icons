@@ -9,7 +9,8 @@
 
 ---
 
-[![Button Customize]][Customize]
+[![Button Customize]][Customize]   
+[![Button Behavior]][Behavior]
 
 ---
 
@@ -20,7 +21,7 @@
 
 ## Acknowledgment
 
-Icons have been acquired from **[SVGPorn.com]**.
+Icons have been acquired from **[SVGPorn.com]**
 
 <br>
 
@@ -31,11 +32,13 @@ Icons have been acquired from **[SVGPorn.com]**.
 [Daeton]: https://github.com/Daeton
 
 [Customize]: Documentation/Customize.md 'How to customize your file icons.'
+[Behavior]: Documentation/Behavior.md 'How to this package behaves.'
 
 
 <!--❮ Buttons ❯---------------------------------------------------------------->
 
 [Button Customize]: https://img.shields.io/static/v1?label=&message=Customize&color=00A98F&style=for-the-badge&logoColor=white&logo=BookStack
+[Button Behavior]: https://img.shields.io/static/v1?label=&message=Behavior&color=A9225C&style=for-the-badge&logoColor=white&logo=ActiGraph
 
 
 <!--❮ Badges ❯----------------------------------------------------------------->
