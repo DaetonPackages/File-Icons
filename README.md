@@ -1,5 +1,5 @@
 
-# File Icons
+# File Icons   ![Badge Status]
 
 ***[Daeton]*** *package that adds file icons.*
 
@@ -36,3 +36,8 @@ Icons have been acquired from **[SVGPorn.com]**.
 <!--❮ Buttons ❯---------------------------------------------------------------->
 
 [Button Customize]: https://img.shields.io/static/v1?label=&message=Customize&color=00A98F&style=for-the-badge&logoColor=white&logo=BookStack
+
+
+<!--❮ Badges ❯----------------------------------------------------------------->
+
+[Badge Status]: https://img.shields.io/badge/Status-Work_In_Progress-yellow.svg?style=for-the-badge
