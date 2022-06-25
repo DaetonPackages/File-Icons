@@ -4,3 +4,6 @@ github : DaetonPackages/File-Icons
 version : 0.0.1
 description : Icons for files.
 license : AGPLv3
+
+activate : Scripts/Activate.js
+settings : Scripts/Settings.js
